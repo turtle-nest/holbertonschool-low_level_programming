@@ -2,7 +2,7 @@
 
 /**
  * main - short description, single line
- * @parameterx: Description of parameter x
+ * @void: Description of parameter
  *
  * Description: Longer description of the function)?
  *
