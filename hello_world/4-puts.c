@@ -6,7 +6,7 @@
  *
  * Description: Longer description of the function)?
  *
- * Return: value  
+ * Return: value
  */
 int main(void)
 {
