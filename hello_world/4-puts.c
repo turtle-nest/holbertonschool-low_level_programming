@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * puts - prints characters
+ * main - short description, single line
  * @parameterx: Description of parameter x
-(* a blank line
+ *
  * Description: Longer description of the function)?
-(* section header: Section description)*
- * Return: 
+ *
+ * Return: value  
  */
 int main(void)
 {
