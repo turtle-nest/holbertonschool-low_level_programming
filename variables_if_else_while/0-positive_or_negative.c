@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 /**
  * function_name - Short description, single line
  * @parameterx: Description of parameter x
