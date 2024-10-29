@@ -1,25 +1,15 @@
-#include <stdio.h>
+#ifndef main_h
+#define main_h
 
- /**
-  * main -  check the code
-  * @void:
- (* a blank line
-  * Description: Longer description of the function)?
- (* section header: Section description)*
-  * Return: Description of
-  */
-int _isupper(int c);
-
-int main(void)
+/**
+ * _isupper - checks for uppercase character
+ * @c: argument checked
+ *
+ * Return: 1 if c uppercase otherwise 0.
+ */
+int _isupper(int c)
 {
-    char c;
     
-    if (_isupper(c))
-    {
-        return (1);
-    }
-    else
-    {
-        return (0);
-    }
-  }
+}
+
+#endif 
