@@ -1,12 +1,11 @@
 #include <stdio.h>
+#include "main.h"
 
  /**
   * main -  check the code
   * @void:
- (* a blank line
-  * Description: Longer description of the function)?
- (* section header: Section description)*
-  * Return: Description of
+  * Description: checks the function
+  * Return: 1 or 0.
   */
 int _isupper(int c);
 
