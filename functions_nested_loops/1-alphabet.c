@@ -12,13 +12,19 @@
 #include "main.h"
 #include <unistd.h>
 
+int main(void)
+{
+	int _putchar(char c);
+
 void print_alphabet(void)
 {
-    char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
-    int i;
+    char *alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    for (i = 0; alphabet[i] != '\0'; i++)
+    while (*alphabet)
     {
-        _putchar(alphabet[i]);
+        _putchar(*alphabet);
+        alphabet++;
     }
+    _putchar('\n');
+}
 }
