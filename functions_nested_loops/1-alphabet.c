@@ -12,9 +12,9 @@
 #include "main.h"
 #include <unistd.h>
 
-int main(void)
-{
-	int _putchar(char c);
+#include <unistd.h>
+
+int _putchar(char c);
 
 void print_alphabet(void)
 {
@@ -27,4 +27,10 @@ void print_alphabet(void)
     }
     _putchar('\n');
 }
+
+int main(void)
+{
+    print_alphabet();
+    return (0);
 }
+
