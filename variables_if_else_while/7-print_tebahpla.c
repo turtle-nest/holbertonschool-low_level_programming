@@ -9,6 +9,7 @@
 (* section header: Section description)*
  * Return: none
  */
+int main(void)
 {
     char letter;
 
