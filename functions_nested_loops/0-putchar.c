@@ -10,16 +10,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include "main.h"
+#include <unistd.h>
 
-int main(void) {
-    putchar('_');
-    putchar('p');
-    putchar('u');
-    putchar('t');
-    putchar('c');
-    putchar('h');
-    putchar('a');
-    putchar('r');
-    putchar('\n');
-    return 0;
+int main(void)
+{
+    char msg[] = "_putchar\n";
+    write(1, msg, sizeof(msg) - 1);
+    return (0);
 }
+
