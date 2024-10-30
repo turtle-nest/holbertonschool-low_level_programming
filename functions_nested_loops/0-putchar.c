@@ -2,7 +2,7 @@
  * main - checks the instructions
  * @void: none
  *
- * Description:
+ * Description:  prints _putchar, followed by a new line.
  * (* section header: Section description)*
  * Return: none
  */
