@@ -7,14 +7,8 @@
 (* section header: Section description)*
  * Return: none
  */
-
 int main(void)
 {
-    
-    int main(void)
-    {
         print_alphabet();
         return (0);
-    }
-
 }
