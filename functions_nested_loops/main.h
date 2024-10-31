@@ -68,5 +68,16 @@ int print_sign(int n)
         return (-1);
     }
 }
-
+/**
+ * TASK 6
+ *int _abs(int) : a function that computes the absolute value of an integer.
+ */
+int _abs(int n)
+{
+    if (n < 0)
+    {
+        return -n;
+    }
+    return n;
+}
 #endif
