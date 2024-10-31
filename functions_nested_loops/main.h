@@ -1,10 +1,13 @@
 #ifndef main_h
 #define main_h
+#include <unistd.h>
 #include <time.h>
 /**
  * TASK 1
  * print_alphabet_x10 : prints the alphabet, in lowercase, followed by a new line.
  */
+int _putchar(char c);
+
 void print_alphabet(void) {
     char letter = 'a';
     while (letter <= 'z') {
@@ -13,6 +16,11 @@ void print_alphabet(void) {
     }
     _putchar('\n');
 }
+
+int _putchar(char c) {
+    return write(1, &c, 1);
+}
+
 /**
  * TASK 2
  * print_alphabet - 10 times the alphabet, in lowercase, followed by a new line.
