@@ -34,6 +34,18 @@ int _islower(int c)
     }
     return (0);
 }
+/**
+ *TASK 4
+ *int _isalpha(int c) :  a function that checks for alphabetic character.
+ */
+int _isalpha(int c)
+{
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+    {
+        return (1);
+    }
+    return (0);
+}
 
 
 #endif
