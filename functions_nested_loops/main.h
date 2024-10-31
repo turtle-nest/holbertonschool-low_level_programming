@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-/** 
+/**
  * TASK 2
  * print_alphabet - 10 times the alphabet, in lowercase, followed by a new line.
  */
@@ -81,11 +81,23 @@ int _abs(int n)
     return n;
 }
 /**
- * TASK 7
- *
+ *TASK 7
+ *print_last_digit : a function that prints the last digit of a number.
  */
-/**
- * TASK 8
+int print_last_digit(int n)
+{
+    int last_digit = n % 10;
+
+    if (last_digit < 0)
+    {
+        last_digit = -last_digit;
+    }
+
+    _putchar(last_digit + '0');
+
+    return (last_digit);
+}
+/** TASK 8
  *void jack_bauer(void) : a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
  */
 void jack_bauer(void)
@@ -134,5 +146,13 @@ void times_table(void)
         }
         _putchar('\n');
     }
+}
+/**
+ * TASK 10
+ * int add(int, int) : a function that adds two integers and returns the result.
+ */
+int add(int a, int b)
+{
+    return (a + b);
 }
 #endif
