@@ -1,6 +1,5 @@
 #ifndef main_h
 #define main_h
-#include <unistd.h>
 #include <time.h>
 /**
  * TASK 1
