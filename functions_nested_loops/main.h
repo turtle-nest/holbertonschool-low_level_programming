@@ -1,9 +1,19 @@
-#ifndef main_h
 #define main_h
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+/**
+ * TASK 1
+ * print_alphabet_x10 : prints the alphabet, in lowercase, followed by a new line.
+ */
+void print_alphabet(void) {
+    char letter = 'a';
+    while (letter <= 'z') {
+        _putchar(letter);
+        letter++;
+    }
+    _putchar('\n');
+}
 /**
  * TASK 2
  * print_alphabet - 10 times the alphabet, in lowercase, followed by a new line.
