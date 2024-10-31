@@ -4,7 +4,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-/**
+/** 
+ * TASK 2
  * print_alphabet - 10 times the alphabet, in lowercase, followed by a new line.
  */
 void print_alphabet_x10(void)
@@ -20,6 +21,18 @@ void print_alphabet_x10(void)
             _putchar(*ptr++);
         }
     }
+}
+/**
+ * TASK 3
+ * int _islower(int c)  : a function that checks for lowercase character.
+ */
+int _islower(int c)
+{
+    if (c >= 'a' && c <= 'z')
+    {
+        return (1);
+    }
+    return (0);
 }
 
 
