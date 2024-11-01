@@ -1,3 +1,4 @@
+#include "main.h"
 #include "1-alphabet.h"
 
 int main(void)
