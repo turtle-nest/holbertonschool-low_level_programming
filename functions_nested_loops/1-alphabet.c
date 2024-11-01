@@ -9,12 +9,16 @@
  * Return: none
  */
 
-void print_alphabet(void)
-{
-    char letter;
-    for (letter = 'a'; letter <= 'z'; letter++)
-    {
+void _putchar(char c) {
+
+}
+
+void print_alphabet(void) {
+    char letter = 'a';
+    while (letter <= 'z') {
         _putchar(letter);
+        letter++;
     }
     _putchar('\n');
 }
+
