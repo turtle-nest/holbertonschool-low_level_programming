@@ -1,4 +1,5 @@
 #include "1-alphabet.h"
+#include "main.h"
 /**
  * main - checks the instructions
  * @void: none
@@ -7,8 +8,12 @@
 (* section header: Section description)*
  * Return: none
  */
-int main(void)
+
+void print_alphabet(void)
 {
-        print_alphabet();
-        return (0);
+    for (char letter = 'a'; letter <= 'z'; letter++)
+    {
+        _putchar(letter);
+    }
+    _putchar('\n');
 }
