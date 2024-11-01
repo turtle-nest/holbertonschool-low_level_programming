@@ -1,4 +1,4 @@
-#include "main.h"
+#include "1-alphabet.h"
 /**
  * main - checks the instructions
  * @void: none
