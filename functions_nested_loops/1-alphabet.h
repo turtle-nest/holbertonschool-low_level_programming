@@ -1,5 +1,5 @@
-
-
+#ifndef 1-alphabet_h
+#define 1-alphabet_h
 void print_alphabet(void)
 {
     char letter = 'a';
@@ -12,4 +12,4 @@ void print_alphabet(void)
 
     _putchar('\n');
 }
-
+#endif
