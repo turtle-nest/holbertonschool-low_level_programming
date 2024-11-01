@@ -1,16 +1,8 @@
-#include "1-alphabet.h"
 #include "main.h"
-/**
- * main - checks the instructions
- * @void: none
- *
- * Description: prints the alphabet, in lowercase, followed by a new line.
-(* section header: Section description)*
- * Return: none
- */
 
 void _putchar(char c) {
-
+    // Assuming you are using a write system call or similar
+    write(1, &c, 1); // This uses the write system call to print
 }
 
 void print_alphabet(void) {
@@ -21,4 +13,3 @@ void print_alphabet(void) {
     }
     _putchar('\n');
 }
-
