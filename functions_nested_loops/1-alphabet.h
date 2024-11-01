@@ -1,5 +1,5 @@
-#ifndef 1-alphabet_h
-#define 1-alphabet_h
+#ifndef ALPHABET_H
+#define ALPHABET_H
 #include <unistd.h>
 /**
  * TASK 1
