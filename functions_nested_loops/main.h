@@ -1,8 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "1-alphabet.h"
 
-#include <unistd.h>  
-
-int _putchar(char c);
-
-#endif
+int main(void)
+{
+    print_alphabet();
+    return 0;
+}
