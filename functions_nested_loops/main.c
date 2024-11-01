@@ -1,7 +1,7 @@
-#include "1-alphabet.h"
+#include "main.h"
 
-int main(void)
-{
+int main(void) {
     print_alphabet();
     return 0;
 }
+
