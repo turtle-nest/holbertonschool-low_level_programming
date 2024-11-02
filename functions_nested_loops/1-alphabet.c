@@ -1,11 +1,13 @@
 int _putchar(char c);
 void print_alphabet(void);
 
-void _putchar(char c) {
+void _putchar(char c) 
+{
     write(1, &c, 1);
 }
 
-void print_alphabet(void) {
+void print_alphabet(void) 
+{
     char letter = 'a';
     while (letter <= 'z') {
         _putchar(letter);
@@ -14,7 +16,8 @@ void print_alphabet(void) {
     _putchar('\n');
 }
 
-int main(void) {
+int main(void) 
+{
     print_alphabet();
     return 0;
 }
