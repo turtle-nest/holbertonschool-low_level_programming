@@ -1,10 +1,18 @@
 #include "main.h"
 /**
- * - 
- * @: 
+ *_puts - prints a string
+ *@str: is a string 
  *
- * Description: 
+ * Description: prints a string
  *
- * Return: 
+ * Return: Always 0.
  */
-
+void _puts(char *str)
+{
+	while (*str)
+	{
+	_putchar(*str);
+	str++;
+	}
+	_putchar('\n');
+}
