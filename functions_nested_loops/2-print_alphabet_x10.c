@@ -10,15 +10,15 @@
 
 void print_alphabet_x10(void)
 {
-    char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
-    int i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
+	int i;
 
-    for (i = 0; i < 10; i++)
-    {
-        char *ptr = alphabet;
-        while (*ptr)
-        {
-           _putchar(*ptr++);
-        }
-    }
+	for (i = 0; i < 10; i++)
+	{
+	char *ptr = alphabet;
+	while (*ptr)
+	{
+	_putchar(*ptr++);
+	}
+	}
 }
