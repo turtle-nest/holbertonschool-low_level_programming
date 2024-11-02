@@ -1,18 +1,12 @@
 #include "main.h"
-
-/**
- *largest_prime_factor
- *main - checks the instructions
- *@n: a number
- *@void: void parameter
- *
- * Description: finds & prints largest prime factor of 612852475143
- *
- * Return: 0.
- */
 #include <stdio.h>
 #include <math.h>
-
+/**
+ * largest_prime_factor - Finds the largest prime factor of a number.
+ * @n: The number to find the largest prime factor of.
+ *
+ * Return: The largest prime factor of n.
+ */
 long largest_prime_factor(long n)
 {
 	long max_prime = -1;
@@ -40,7 +34,11 @@ long largest_prime_factor(long n)
 
 	return (max_prime);
 }
-
+/**
+ * main - Entry point of the program.
+ *
+ * Return: Always 0 (Success).
+ */
 int main(void)
 {
 	long number = 612852475143;
