@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * main - checks the instructions
- * @void: type int
+ * _abs - checks the instructions
+ * @n: type int
  *
- * Description:
+ * Description: computes absolute value of an int
 (* section header: Section description)*
  * Return: Always return 0.
  */
 
 int _abs(int n)
 {
-    if (n < 0)
-    {
-        return -n;
-    }
-    return n;
+if (n < 0)
+{
+return (-n);
+}
+return (n);
 }
