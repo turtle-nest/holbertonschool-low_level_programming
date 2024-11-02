@@ -1,8 +1,6 @@
-#ifndef main_h
-#define main_h
-/**
-* Prototypes des fonctions
-*/
+#ifndef MAIN_H
+#define MAIN_H
+
 int _isupper(int c);
 
-#endif /* main.h */
+#endif
