@@ -8,16 +8,16 @@
  *
  * Return: Always 0.
  */
-void print_number(int n) 
+void print_number(int n)
 {
-	if (n == -2147483648) 
+	if (n == -2147483648)
 	{
 	_putchar('-');
 	_putchar('2');
 	n = 147483648;
 	}
 	else if (n < 0)
-       	{
+	{
 	_putchar('-');
 	n = -n;
 	}
