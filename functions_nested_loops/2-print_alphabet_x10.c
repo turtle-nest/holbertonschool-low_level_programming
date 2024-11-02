@@ -3,7 +3,7 @@
  * print_alphabet_x10 - checks the instructions
  * @void: none
  *
- * Description: prints 10 times the alphabet, in lowercase, followed by a new line.
+ * Description: prints 10 times the alphabet, in lowercase
 (* section header: Section description)*
  * Return: none
  */
