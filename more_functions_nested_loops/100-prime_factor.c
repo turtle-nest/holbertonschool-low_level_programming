@@ -33,3 +33,11 @@ long largest_prime_factor(long n) {
 
     return max_prime;
 }
+
+int main() {
+    long number = 612852475143;
+    long result = largest_prime_factor(number);
+    printf("%ld\n", result);
+    return 0;
+}
+
