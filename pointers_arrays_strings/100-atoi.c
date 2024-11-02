@@ -20,9 +20,7 @@ int _atoi(char *s)
 	sign *= -1;
 	}
 	else if (*s == '+')
-	{
-
-        }
+	;
 	else if (*s >= '0' && *s <= '9')
 	{
 	started = 1;
