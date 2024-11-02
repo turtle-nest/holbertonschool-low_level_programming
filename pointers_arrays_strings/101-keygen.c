@@ -1,17 +1,3 @@
-#include "main.h"
-/**
- *_atoi - convert a string to an integer.
- *@s: is a string
- *
- * Description: convert a string to an integer.
- *
- * Return: 0.
- */
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-#define PASSWORD_LENGTH 10
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -34,8 +20,9 @@ char generate_random_char() {
 
 int main(void) {
     srand(time(NULL));
-    char password[PASSWORD_LENGTH + 1];
     int i;
+    char password[PASSWORD_LENGTH + 1];
+    
     for (i = 0; i < PASSWORD_LENGTH; i++) {
         password[i] = generate_random_char();
     }
@@ -43,5 +30,4 @@ int main(void) {
     printf("%s\n", password);
     return 0;
 }
-
 
