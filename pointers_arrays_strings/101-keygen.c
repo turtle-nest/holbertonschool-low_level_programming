@@ -20,8 +20,8 @@ char generate_random_char() {
 
 int main(void) {
     srand(time(NULL));
-    char password[PASSWORD_LENGTH + 1];
     int i;
+    char password[PASSWORD_LENGTH + 1];
 
     for (i = 0; i < PASSWORD_LENGTH; i++) {
         password[i] = generate_random_char();
