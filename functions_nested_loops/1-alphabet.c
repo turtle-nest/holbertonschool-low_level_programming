@@ -1,7 +1,4 @@
-#include "main.h"
-#include <unistd.h> 
-
-int _putchar(char c);
+#include "main.h" 
 
 void print_alphabet(void) {
     char letter;
@@ -10,8 +7,4 @@ void print_alphabet(void) {
         _putchar(letter); 
     }
     _putchar('\n');
-}
-
-int _putchar(char c) {
-    return write(1, &c, 1);
 }
