@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - checks the instructions
+ * print_alphabet_x10 - checks the instructions
  * @void: none
  *
  * Description: prints 10 times the alphabet, in lowercase, followed by a new line.
