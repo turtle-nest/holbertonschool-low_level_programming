@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
+ *largest_prime_factor
  *main - checks the instructions
+ *@n: a number
  *@void: void parameter
  *
  * Description: finds & prints largest prime factor of 612852475143
