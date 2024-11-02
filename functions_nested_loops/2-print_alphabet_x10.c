@@ -8,10 +8,17 @@
  * Return: none
  */
 
-void print_alphabet_x10(void);
-
-int main(void)
+void print_alphabet_x10(void)
 {
-    print_alphabet_x10();
-        return (0);
+    char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
+    int i;
+
+    for (i = 0; i < 10; i++)
+    {
+        char *ptr = alphabet;
+        while (*ptr)
+        {
+            putchar(*ptr++);
+        }
+    }
 }
