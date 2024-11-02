@@ -1,18 +1,14 @@
+#include "main.h"
 /**
  * main - checks the instructions
- * @void: none
+ * @void: type int
  *
- * Description: 
- * (* section header: Section description)*
- * Return: none
+ * Description:
+(* section header: Section description)*
+ * Return: Always return 0.
  */
-#include "main.h"
 
-int main(void)
+int add(int a, int b)
 {
-    int n;
-
-    n = add(89, 9);
-    printf("%d\n", n);
-    return (0);
+    return (a + b);
 }

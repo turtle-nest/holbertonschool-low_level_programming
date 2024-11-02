@@ -1,38 +1,28 @@
+#include "main.h"
 /**
  * main - checks the instructions
  * @void: type int
  *
- * Description: a function that prints the sign of a number.
+ * Description:
 (* section header: Section description)*
  * Return: Always return 0.
  */
-#include "main.h"
 
-int main(void)
+int print_sign(int n)
 {
-    int r;
-
-        r = print_sign(98);
-        _putchar(',');
-        _putchar(' ');
-        _putchar(r + '0');
-        _putchar('\n');
-        r = print_sign(0);
-        _putchar(',');
-        _putchar(' ');
-        _putchar(r + '0');
-        _putchar('\n');
-        r = print_sign(0xff);
-        _putchar(',');
-        _putchar(' ');
-        _putchar(r + '0');
-        _putchar('\n');
-        r = print_sign(-1);
-        _putchar(',');
-        _putchar(' ');
-        _putchar(r + '0');
-        _putchar('\n');
+    if (n > 0)
+    {
+        _putchar('+');
+        return (1);
+    }
+    else if (n == 0)
+    {
+        _putchar('0');
         return (0);
-
+    }
+    else
+    {
+        _putchar('-');
+        return (-1);
+    }
 }
-
