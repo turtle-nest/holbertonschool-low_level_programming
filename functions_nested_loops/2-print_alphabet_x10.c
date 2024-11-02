@@ -18,7 +18,7 @@ void print_alphabet_x10(void)
         char *ptr = alphabet;
         while (*ptr)
         {
-            putchar(*ptr++);
+           _ putchar(*ptr++);
         }
     }
 }
