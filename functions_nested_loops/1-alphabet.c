@@ -1,8 +1,8 @@
-#include "main.h"
+int _putchar(char c);
+void print_alphabet(void);
 
 void _putchar(char c) {
-    // Assuming you are using a write system call or similar
-    write(1, &c, 1); // This uses the write system call to print
+    write(1, &c, 1);
 }
 
 void print_alphabet(void) {
@@ -14,8 +14,11 @@ void print_alphabet(void) {
     _putchar('\n');
 }
 
+int main(void) {
+    print_alphabet();
+    return 0;
+}
 
-int _putchar(char c);
-void print_alphabet(void);
+
 
 
