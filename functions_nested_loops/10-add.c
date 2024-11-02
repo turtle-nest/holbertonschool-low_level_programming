@@ -1,14 +1,15 @@
 #include "main.h"
 /**
- * main - checks the instructions
- * @void: type int
+ * add - checks the instructions
+ * @a: type int
+ * @b: int
  *
- * Description:
+ * Description: addition
 (* section header: Section description)*
  * Return: Always return 0.
  */
 
 int add(int a, int b)
 {
-    return (a + b);
+return (a + b);
 }
