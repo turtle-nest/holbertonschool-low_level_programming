@@ -34,7 +34,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r) {
     }
 
     r[k] = '\0';
-    for (int start = 0, end = k - 1; start < end; start++, end--) {
+
+    int start, end;
+    for (start = 0, end = k - 1; start < end; start++, end--) {
         char temp = r[start];
         r[start] = r[end];
         r[end] = temp;
