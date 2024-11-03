@@ -1,16 +1,2 @@
 #!/bin/bash
-
-if [ -z "$CFILE" ]; then
-    echo "Error: CFILE variable is not set."
-    exit 1
-fi
-
-OUTPUTFILE="${CFILE%.c}.s"
-gcc -S -masm=intel "$CFILE" -o "$OUTPUTFILE"
-
-if [ $? -eq 0 ]; then
-    echo "Assembly code generated: $OUTPUTFILE"
-else
-    echo "Error: Failed to generate assembly code."
-    exit 1
-fi
+gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
