@@ -20,8 +20,9 @@ char *leet(char *str) {
     leet_map['T'] = '7';
     leet_map['l'] = '1';
     leet_map['L'] = '1';
+    int i;
 
-    for (int i = 0; str[i] != '\0'; i++) {
+    for (i = 0; str[i] != '\0'; i++) {
         if (leet_map[(unsigned char)str[i]]) {
             str[i] = leet_map[(unsigned char)str[i]];
         }
