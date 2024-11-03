@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - checks the instructions
  * @void: none
@@ -6,17 +7,20 @@
  * (* section header: Section description)*
  * Return: none
  */
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include "main.h"
-#include <unistd.h>
+void print_times_table(int n) {
+int i;
+	
+    if (n < 0 || n > 15) {
+        return;
+    }
 
-int main(void)
-{
-	char msg[] = "_putchar\n";
-
-	write(1, msg, sizeof(msg) - 1);
-	return (0);
+    for (i = 0; i <= 10; i++) {
+        printf("%d", n * i);
+        if (i < 10) {
+            printf(", ");
+        }
+    }
+    printf("\n");
 }
+
 
