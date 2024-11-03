@@ -11,10 +11,14 @@
  * Return: 0 if result not stored in r, otherwise r.
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r) {
-    int len1 = strlen(n1);
-    int len2 = strlen(n2);
-    int carry = 0;
-    int i = len1 - 1, j = len2 - 1, k = 0;
+    int len1, len2, carry, i, j, k;
+
+    len1 = strlen(n1);
+    len2 = strlen(n2);
+    carry = 0;
+    i = len1 - 1;
+    j = len2 - 1;
+    k = 0;
 
     if (size_r <= (len1 > len2 ? len1 : len2) + 1) {
         return 0;
