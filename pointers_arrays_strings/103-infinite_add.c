@@ -23,9 +23,9 @@ i = len1 - 1;
 j = len2 - 1;
 k = 0;
 
-if (size_r <= (len1 > len2 ? len1 : len2) + 1)
+if (size_r <= (len1 > len2 ? len1 : len2) +1)
 {
-return 0;
+return (0);
 }
 
 while (i >= 0 || j >= 0 || carry > 0)
@@ -40,7 +40,7 @@ r[k++] = (sum % 10) + '0';
 
 if (k >= size_r)
 {
-return 0;
+return (0);
 }
 
 r[k] = '\0';
@@ -52,5 +52,5 @@ r[start] = r[end];
 r[end] = temp;
 }
 
-return r;
+return (r);
 }
