@@ -3,17 +3,17 @@
 #include <stdio.h>
 /**
  * main - checks the instructions
- * @void: none
+ * @void: void.
  *
- * Description: prints all single digit numbers of base 10 starting from 0, followed by a new line. 
+ * Description: checks instructions
 (* section header: Section description)*
- * Return: none
+ * Return: 0.
  */
 int main(void)
 {
-       	int number; 
-	for (number = 0; number <= 9; number++) 
-		putchar(number + '0'); 
-	putchar('\n'); 
-	return 0;
+int number;
+for (number = 0; number <= 9; number++)
+putchar(number + '0');
+putchar('\n');
+return (0);
 }
