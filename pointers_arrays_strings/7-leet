@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 char *leet(char *str) {
     char leet_map[256] = {0};
