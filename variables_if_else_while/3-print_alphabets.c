@@ -5,7 +5,7 @@
  * main - checks the instructions
  * @void: none
  *
- * Description: prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+ * Description: alphabet in lowercase, and then in uppercase
 (* section header: Section description)*
  * Return: none
  */
