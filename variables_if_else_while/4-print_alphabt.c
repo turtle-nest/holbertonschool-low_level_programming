@@ -5,22 +5,22 @@
  * main - checks the instructions
  * @void: none
  *
- * Description: prints the alphabet in lowercase, followed by a new line.
+ * Description: prints the alphabet in lowercase
 (* section header: Section description)*
  * Return: none
  */
 int main(void)
 {
-    char letter;
+char letter;
 
-    for (letter = 'a'; letter <= 'z'; letter++)
-    {
-        if (letter != 'q' && letter != 'e')
-            putchar(letter);
-    }
+for (letter = 'a'; letter <= 'z'; letter++)
+{
+if (letter != 'q' && letter != 'e')
+putchar(letter);
+}
 
-    putchar('\n');
+putchar('\n');
 
-    return 0;
+return (0);
 }
 
