@@ -18,11 +18,9 @@ if (size <= 0)
 putchar('\n');
 return;
 }
-
 for (i = 0; i < size; i += 10)
 {
 printf("%08x: ", i);
-
 for (j = 0; j < 10; j++)
 {
 if (i + j < size)
@@ -38,24 +36,17 @@ if (j % 2 == 1)
 printf(" ");
 }
 }
-
 for (j = 0; j < 10; j++)
 {
 if (i + j < size)
 {
 char c = b[i + j];
 if (c >= 32 && c <= 126)
-{
 putchar(c);
-}
 else
-{
 putchar('.');
 }
 }
-}
-
 putchar('\n');
 }
 }
-
