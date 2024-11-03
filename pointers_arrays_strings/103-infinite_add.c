@@ -36,6 +36,17 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r) {
 
     if (k >= size_r) return 0;
 
+    if (carry) {
+        if (k + 1 >= size_r) return 0;
+        for (l = k; l > 0; l--) {
+            r[l] = r[l - 1];
+        }
+        r[0] = carry + '0';
+        k++;
+    }
+
+    r[k] = '\0';
+
     for (l = 0; l < k / 2; l++) {
         char temp = r[l];
         r[l] = r[k - 1 - l];
