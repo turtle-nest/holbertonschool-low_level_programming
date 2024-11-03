@@ -1,25 +1,27 @@
+#include <stdio.h>
 /**
  * main - checks the instructions
- * @void: none
+ * @void: void
  *
- * Description:prints all possible combinations of single-digit numbers.
+ * Description:prints all possible combinations of single-digit numbers
 (* section header: Section description)*
- * Return: none
+ * Return: 0.
  */
-#include <stdio.h>
+int main(void)
+{
+int i;
 
-int main(void) {
-    int i;
+for (i = 0; i < 10; i++)
+{
+putchar(i + '0');
+if (i < 9)
+{
+putchar(',');
+putchar(' ');
+}
+}
+putchar('\n');
 
-    for (i = 0; i < 10; i++) {
-        putchar(i + '0');
-        if (i < 9) {
-            putchar(',');
-            putchar(' ');
-        }
-    }
-    putchar('\n');
-
-    return 0;
+return (0);
 }
 
