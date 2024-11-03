@@ -3,25 +3,25 @@
 #include <stdio.h>
 /**
  * main - checks the instructions
- * @void: none
+ * @void: void.
  *
- * Description: prints all the numbers of base 16 in lowercase, followed by a new line.
+ * Description: all the numbers of base 16 in lowercase
 (* section header: Section description)*
- * Return: none
+ * Return: 0.
  */
 int main(void)
 {
-    int num;
+int num;
 
-    for (num = 0; num < 16; num++)
-    {
-        if (num < 10)
-            putchar(num + '0');
-        else
-            putchar(num - 10 + 'a');
-    }
+for (num = 0; num < 16; num++)
+{
+if (num < 10)
+putchar(num + '0');
+else
+putchar(num - 10 + 'a');
+}
 
-    putchar('\n');
+putchar('\n');
 
-    return 0;
+return (0);
 }
