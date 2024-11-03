@@ -22,3 +22,9 @@ char *leet(char *str) {
     
     return str;
 }
+int main() {
+    char str[] = "Leet speak is awesome!";
+    printf("Original: %s\n", str);
+    printf("Encoded: %s\n", leet(str));
+    return 0;
+}
