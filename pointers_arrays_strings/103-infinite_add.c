@@ -10,8 +10,11 @@
  *
  * Return: 0 if result not stored in r, otherwise r.
  */
+#include <string.h>
+
 char *infinite_add(char *n1, char *n2, char *r, int size_r) {
     int len1, len2, carry, i, j, k;
+    int start, end;
 
     len1 = strlen(n1);
     len2 = strlen(n2);
@@ -39,7 +42,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r) {
 
     r[k] = '\0';
 
-    int start, end;
     for (start = 0, end = k - 1; start < end; start++, end--) {
         char temp = r[start];
         r[start] = r[end];
