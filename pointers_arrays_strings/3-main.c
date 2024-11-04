@@ -11,8 +11,8 @@ int main(void)
     char *f = "oleh";
     unsigned int n;
 
-    n = _strspn(s, f); // Calcule la longueur du préfixe
-    printf("%u\n", n); // Affiche la longueur
-    return (0); // Retourne 0
+    n = _strspn(s, f);
+    printf("%u\n", n);
+    return (0);
 }
 
