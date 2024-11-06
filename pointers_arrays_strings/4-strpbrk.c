@@ -13,7 +13,7 @@ while (*s)
 {
 char *a = accept;
 
-while (*a) 
+while (*a)
 {
 if (*s == *a)
 {
