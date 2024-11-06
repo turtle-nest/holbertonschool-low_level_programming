@@ -4,6 +4,8 @@
  * @argc: argument count
  * @argv: argument vector
  *
+ * Description: prints its name
+ *
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
