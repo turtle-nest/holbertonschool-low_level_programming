@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * main - prints its name
+ * main - prints all arguments it receives
+ * @:
  * @:
  *
- * Description:
+ * Description: prints all arguments it receives
  *
  * Return: Always 0.
  */
