@@ -7,8 +7,9 @@
  *
  * Return:
  */
-int main(int argc; char *argv[])
+int main(int argc, char *argv[])
 {
-	_putchar(argv[0])
-		return;
+	(void)argc;
+	_putchar(argv[0][0]);
+		return (0);
 }
