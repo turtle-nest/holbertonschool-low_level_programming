@@ -27,4 +27,3 @@ s++;
 
 return (NULL);
 }
-
