@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int factorial - a function
+ * factorial - a function
  * @n: an integer.
  *
  * Description: returns the ! of a given number.
