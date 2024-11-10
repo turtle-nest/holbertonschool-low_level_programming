@@ -2,7 +2,9 @@
 #include <stdlib.h>
 /**
  * main - multiplication
- *
+ * @argc: argument count
+ * @argv: argument vector
+ * 
  * Description: program that multiplies two numbers.
  *
  * Return: 1 if error, otherwise 0.
