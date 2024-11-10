@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int check_divisors - check the divisor
+ * check_divisors - check the divisor
  * @n: the number
  * @divisor: the divisor
  *
@@ -21,7 +21,7 @@ return (0);
 return (check_divisors(n, divisor + 1));
 }
 /**
- * int is_prime_number - determine if is a prime number
+ * is_prime_number - determine if is a prime number
  * @n: the number
  *
  * Description: determine if is a prime number
