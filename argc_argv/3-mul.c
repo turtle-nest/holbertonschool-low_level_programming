@@ -4,7 +4,7 @@
  * main - multiplication
  * @argc: argument count
  * @argv: argument vector
- * 
+ *
  * Description: program that multiplies two numbers.
  *
  * Return: 1 if error, otherwise 0.
@@ -20,7 +20,7 @@ return (1);
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
-    
+
 result = num1 * num2;
 
 printf("%d\n", result);
