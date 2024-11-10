@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * int is_prime_number - determine if is a prime number
+ * int check_divisors - check the divisor
  * @n: the number
+ * @divisor: the divisor
  *
  * Description: determine if is a prime number
  *
@@ -19,7 +20,14 @@ return (0);
 }
 return (check_divisors(n, divisor + 1));
 }
-
+/**
+ * int is_prime_number - determine if is a prime number
+ * @n: the number
+ *
+ * Description: determine if is a prime number
+ *
+ * Return: 1 if the input integer is a prime number, otherwise 0.
+ */
 int is_prime_number(int n)
 {
 if (n <= 1)
