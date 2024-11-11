@@ -9,12 +9,22 @@
  */
 char *_strdup(char *str)
 {
-char *copy = (char*)malloc((strlen(str) + 1) * sizeof(char));
+char *copy;
+int i, len = 0;
 
+if (str == NULL)
+return (NULL);
+
+while (str[len] != '\0')
+len++;
+
+copy = malloc((len + 1) * sizeof(char));
 if (copy == NULL)
 return (NULL);
 
-strcpy(copy, str);
+for (i = 0; i < len; i++)
+copy[i] = str[i];
+copy[len] = '\0';
 
-return (str);
+return (copy);
 }
