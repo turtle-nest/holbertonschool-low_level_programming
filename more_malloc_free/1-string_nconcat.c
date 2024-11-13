@@ -18,7 +18,12 @@ size_t total_len;
 char *concat_str;
 size_t i, j;
 
-if (n > s2_len)
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+
+if (n >= s2_len)
 {
 n = s2_len;
 }
