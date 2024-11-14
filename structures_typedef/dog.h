@@ -1,4 +1,5 @@
-#include "main.h"
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * dog - define a structure dog
@@ -10,6 +11,9 @@
  */
 struct dog
 {
-char *name, *owner;
+char *name;
 float age;
-}d;
+char *owner;
+};
+
+#endif
