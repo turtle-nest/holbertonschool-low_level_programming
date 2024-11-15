@@ -21,10 +21,8 @@ arr = malloc(size * sizeof(int));
 if (arr == NULL)
 return (NULL);
 
-for (i = 0; i < max; i++)
+for (i = 0; i < size; i++)
 arr[i] = min + i;
-
-arr[i] = max;
 
 return (arr);
 }
