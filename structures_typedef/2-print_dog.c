@@ -8,10 +8,6 @@
  *
  * Return: Nothing.
  */
-/**
- * struct dog - Short description
- *
- */
 void print_dog(struct dog *d)
 {
 if (d == NULL)
