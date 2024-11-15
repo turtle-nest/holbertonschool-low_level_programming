@@ -32,7 +32,7 @@ for (i = 0; i < length1; i++)
 str[i] = s1[i];
 
 for (j = 0; j < length2; j++)
-str[i +j] = s2[j];
+str[i + j] = s2[j];
 
 str[i + j] = '\0';
 
