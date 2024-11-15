@@ -21,6 +21,18 @@ return (1);
 }
 
 /**
+ * free_and_exit - Libère la mémoire et quitte le programme.
+ * @result: Pointeur vers le tableau alloué dynamiquement.
+ * @status: Code de sortie.
+ */
+void free_and_exit(int *result, int status)
+{
+if (result)
+free(result);
+exit(status);
+}
+
+/**
  * _strlen - Renvoie la longueur d'une chaîne.
  * @str: La chaîne dont la longueur est à calculer.
  *
@@ -97,7 +109,6 @@ for (; i < len1 + len2; i++)
 _putchar(result[i] + '0');
 
 _putchar('\n');
-free(result);
-return (0);
+free_and_exit(result, 0);
 }
 
