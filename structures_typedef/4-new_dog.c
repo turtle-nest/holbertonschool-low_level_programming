@@ -14,7 +14,7 @@ int length = 0;
 while (length != '\0')
 length++;
 
-return (lenght);
+return (length);
 }
 /**
  * new_dog - create a new dog
