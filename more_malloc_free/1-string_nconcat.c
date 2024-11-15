@@ -49,7 +49,7 @@ n = s2_len;
 
 total_len = s1_len + n + 1;
 
-concat_str = malloc(total_len * sizeof(char));
+concat_str = malloc(total_len *sizeof(char));
 if (concat_str == NULL)
 return (NULL);
 
