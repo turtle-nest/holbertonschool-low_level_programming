@@ -3,6 +3,22 @@
 #include <string.h>
 
 /**
+ * _strlen - Calculates the length of a string.
+ * @str: The string to calculate.
+ *
+ * Return: The length of the string.
+ */
+int _strlen(char *str)
+{
+int length = 0;
+
+while (str[length] != '\0')
+length++;
+
+return (length);
+}
+
+/**
  * string_nconcat - concatenates two strings
  * @s1: the first string
  * @s2: the second string
@@ -12,8 +28,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-size_t s1_len = strlen(s1);
-size_t s2_len = strlen(s2);
+size_t s1_len = _strlen(s1);
+size_t s2_len = _strlen(s2);
 size_t total_len;
 char *concat_str;
 size_t i, j;
