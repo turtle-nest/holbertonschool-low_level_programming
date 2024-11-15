@@ -17,6 +17,25 @@ length++;
 
 return (length);
 }
+
+/**
+ * _strcopy - Copies a string to a destination buffer.
+ * @dest: Destination buffer.
+ * @src: Source string.
+ *
+ * Return: Pointer to the destination buffer.
+ */
+char *_strcopy(char *dest, char *src)
+{
+int i;
+
+for (i = 0; src[i] != '\0'; i++)
+dest[i] = src[i];
+dest[i] = '\0';
+
+return (dest);
+}
+
 /**
  * new_dog - create a new dog
  * @name: name of the new dog
@@ -40,7 +59,7 @@ free(dog);
 return (NULL);
 }
 
-strcpy(dog->name, name);
+_strcopy(dog->name, name);
 
 dog->owner = malloc(_strlen(owner + 1));
 if (dog->owner == NULL)
@@ -50,7 +69,7 @@ free(dog);
 return (NULL);
 }
 
-strcpy(dog->owner, owner);
+_strcopy(dog->owner, owner);
 
 dog->age = age;
 
