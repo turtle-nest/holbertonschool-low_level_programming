@@ -110,7 +110,12 @@ _putchar(result[i] + '0');
 
 _putchar('\n');
 free_and_exit(result, 0);
+
+if (result != NULL)
+{
+free(result);
 result = NULL;
+}
 
 return (0);
 }
