@@ -24,7 +24,7 @@ number = va_arg(args, int);
 printf("%d", number);
 
 if (i < (n - 1))
-printf("%s", separator);
+printf("%s ", separator);
 }
 
 va_end(args);
