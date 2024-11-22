@@ -16,7 +16,7 @@ char *string;
 if (separator == NULL)
 separator = "";
 
-va_start (args, n);
+va_start(args, n);
 
 for (i = 0; i < n; i++)
 {
