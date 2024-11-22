@@ -74,12 +74,12 @@ printer_t printers[] =
 
 va_start(args, format);
 
-while (format[i] != '\0')
+while (format && format[i] != '\0')
 {
 j = 0;
 while (printers[j].type != '\0')
 {
-if (format[i] == printers[j].type && format != NULL)
+if (format[i] == printers[j].type)
 {
 printf("%s", separator);
 printers[j].func(args);
