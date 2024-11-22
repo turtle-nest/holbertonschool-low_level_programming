@@ -42,11 +42,13 @@ printf("%c", (char)va_arg(args, int));
 void print_string(va_list args)
 {
 char *str = va_arg(args, char *);
-if (str)
+if (!str)
 {
-printf("%s", str);
-}
 printf("(nil)");
+return;
+}
+
+printf("%s", str);
 }
 
 /**
@@ -60,8 +62,6 @@ void print_all(const char * const format, ...)
 unsigned int i = 0, j;
 char *separator = "";
 va_list args;
-
-
 
 printer_t printers[] = 
 {
