@@ -63,8 +63,7 @@ unsigned int i = 0, j;
 char *separator = "";
 va_list args;
 
-printer_t printers[] = 
-{
+printer_t printers[] = {
 {'i', print_int},
 {'f', print_float},
 {'c', print_char},
