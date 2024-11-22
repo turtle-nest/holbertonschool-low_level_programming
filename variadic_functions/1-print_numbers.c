@@ -7,30 +7,33 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-va_list args;
-unsigned int i;
-int num;
-char *str_num;
+    va_list args;
+    unsigned int i;
+    int num;
+    char *str_num;
 
-va_start(args, n);
+    va_start(args, n);
 
-for (i = 0; i < n; i++)
-{
-num = va_arg(args, int);
-str_num = convert_to_string(num);
-for (int j = 0; str_num[j]; j++)
-_putchar(str_num[j]);
-free(str_num);
+    for (i = 0; i < n; i++)
+    {
+        num = va_arg(args, int);
+        str_num = convert_to_string(num);
 
-if (separator != NULL && i != n - 1)
-{
-for (int j = 0; separator[j]; j++)
-_putchar(separator[j]);
-}
-}
+        unsigned int j;
+        for (j = 0; str_num[j]; j++)
+            _putchar(str_num[j]);
 
-va_end(args);
-_putchar('\n');
+        free(str_num);
+
+        if (separator != NULL && i != n - 1)
+        {
+            for (j = 0; separator[j]; j++)
+                _putchar(separator[j]);
+        }
+    }
+
+    va_end(args);
+    _putchar('\n');
 }
 
 /**
@@ -41,32 +44,40 @@ _putchar('\n');
  */
 char *convert_to_string(int num)
 {
-int len = num == 0 ? 1 : 0, tmp = num;
-char *str;
-int is_negative = num < 0;
+    int len = 0, tmp = num;
+    int is_negative = 0;
+    char *str;
+    int i;
 
-if (is_negative)
-num = -num;
+    if (num == 0)
+        len = 1;
 
-while (tmp != 0)
-{
-len++;
-tmp /= 10;
-}
+    if (num < 0)
+    {
+        is_negative = 1;
+        num = -num;
+    }
 
-str = malloc(len + is_negative + 1);
-if (!str)
-return (NULL);
+    while (tmp != 0)
+    {
+        len++;
+        tmp /= 10;
+    }
 
-str[len + is_negative] = '\0';
-for (int i = len + is_negative - 1; i >= 0; i--)
-{
-str[i] = (num % 10) + '0';
-num /= 10;
-}
+    str = malloc(len + is_negative + 1);
+    if (!str)
+        return (NULL);
 
-if (is_negative)
-str[0] = '-';
+    str[len + is_negative] = '\0';
 
-return (str);
+    for (i = len + is_negative - 1; i >= 0; i--)
+    {
+        str[i] = (num % 10) + '0';
+        num /= 10;
+    }
+
+    if (is_negative)
+        str[0] = '-';
+
+    return (str);
 }
