@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - check the code
+ * @argc: The number of command line arguments
+ * @argv: An array of strings representing
+ * the command line arguments
+ *
+ * Return: 0 if successful, or an exit code if an error occurs.
+ */
 int main(int argc, char *argv[])
 {
 int num1, num2, result;
