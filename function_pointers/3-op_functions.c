@@ -53,7 +53,7 @@ return (a / b);
 }
 
 /**
- * mod - returns the remainder of the division 
+ * mod - returns the remainder of the division
  * of two integers
  * @a: an integer
  * @b: another integer
