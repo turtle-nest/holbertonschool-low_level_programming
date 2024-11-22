@@ -79,7 +79,7 @@ while (format[i] != '\0')
 j = 0;
 while (printers[j].type != '\0')
 {
-if (format[i] == printers[j].type)
+if (format[i] == printers[j].type && format != NULL)
 {
 printf("%s", separator);
 printers[j].func(args);
