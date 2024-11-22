@@ -1,64 +1,96 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - prints anithing
+ * print_int - print an int
+ * @args: argument of a variadic list
+ *
+ * Return: None.
+ */
+void print_int(va_list args)
+{
+printf("%d", va_arg(args, int));
+}
+
+/**
+ * print_float - prints a float
+ * @args: argument of a variadic list
+ *
+ * Return: None.
+ */
+void print_float(va_list args)
+{
+printf("%f", va_arg(args, double));
+}
+
+/**
+ * print_char - prints a char
+ * @args: argument of a variadic list
+ *
+ * Return: None.
+ */
+void print_char(va_list args)
+{
+printf("%c", (char)va_arg(args, int));
+}
+
+/**
+ * print_string - prints a string
+ * @args: argument of a variadic list
+ *
+ * Return: None.
+ */
+void print_string(va_list args)
+{
+char *str = va_arg(args, char *);
+if (str)
+printf("%s", str);
+else
+printf("(nil)");
+}
+
+/**
+ * print_all - prints anything
  * @format: a list of types of arguments passed to the function
  *
  * Return: None.
  */
 void print_all(const char * const format, ...)
 {
+unsigned int i = 0, j;
+char *separator = "";
 va_list args;
-const char *ptr = format;
-char separator = 0;
-char *val_str;
+
+
+
+printer_t printers[] = 
+{
+{'i', print_int},
+{'f', print_float},
+{'c', print_char},
+{'s', print_string},
+{NULL, NULL}
+};
 
 va_start(args, format);
 
-while (ptr && *ptr)
-{
-if (separator)
-printf(", ");
-separator = 1;
+if (!format)
+return;
 
-switch (*ptr)
+while (format[i])
 {
-case 'i':
+j = 0;
+while (printers[j].type != NULL)
 {
-int val_int = va_arg(args, int);
-printf("%d", val_int);
+if (format[i] == printers[j].type)
+{
+printf("%s", separator);
+printers[j].func(args);
+separator = ", ";
 break;
 }
-case 'f':
-{
-double val_double = va_arg(args, double);
-printf("%f", val_double);
-break;
+j++;
 }
-case 'c':
-{
-char val_char = (char)va_arg(args, int);
-printf("%c", val_char);
-break;
-}
-case 's':
-{
-val_str = va_arg(args, char *);
-if (val_str)
-{
-printf("%s", val_str);
-}
-else
-{
-printf("(nil)");
-}
-break;
-}
-default:
-separator = 0;
-break;
-}
-ptr++;
+i++;
 }
 
 va_end(args);
