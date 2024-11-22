@@ -73,10 +73,7 @@ printer_t printers[] =
 
 va_start(args, format);
 
-if (!format)
-return;
-
-while (format[i])
+while (format[i] != '\0')
 {
 j = 0;
 while (printers[j].type != '\0')
