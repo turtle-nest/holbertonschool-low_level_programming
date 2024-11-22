@@ -14,7 +14,7 @@ unsigned int i;
 char *string;
 
 if (separator == NULL)
-return;
+separator = "";
 
 va_start (args, n);
 
@@ -29,7 +29,7 @@ printf("(nil)");
 
 printf("%s", string);
 
-if (separator && i < (n - 1))
+if (i < (n - 1))
 printf("%s", separator);
 }
 
