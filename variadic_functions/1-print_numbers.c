@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdlib.h>
 
 /**
  * print_numbers - Prints numbers followed by a new line.
@@ -8,21 +10,20 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
     va_list args;
-    unsigned int i, j; /* Move declaration of j here */
+    unsigned int i, j;
     int num;
-    char *str_num;
+    char str_num[20];  /* Fixed-size buffer for converting number to string */
 
     va_start(args, n);
 
     for (i = 0; i < n; i++)
     {
         num = va_arg(args, int);
-        str_num = convert_to_string(num);
+        convert_to_string(num, str_num);  /* Convert the number to string in-place */
 
         /* Print the converted number */
         for (j = 0; str_num[j]; j++)
             _putchar(str_num[j]);
-        free(str_num);
 
         /* Print the separator */
         if (separator != NULL && i != n - 1)
@@ -39,17 +40,19 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 /**
  * convert_to_string - Converts an integer to a string.
  * @num: The integer to convert.
- *
- * Return: Pointer to the string representation of the integer.
+ * @str: The buffer where the string representation will be stored.
  */
-char *convert_to_string(int num)
+void convert_to_string(int num, char *str)
 {
     int len = 0, tmp = num, is_negative = 0;
-    char *str;
     int i;
 
     if (num == 0)
-        len = 1;
+    {
+        str[len++] = '0';
+        str[len] = '\0';
+        return;
+    }
 
     if (num < 0)
     {
@@ -63,10 +66,6 @@ char *convert_to_string(int num)
         tmp /= 10;
     }
 
-    str = malloc(len + is_negative + 1);
-    if (!str)
-        return (NULL);
-
     str[len + is_negative] = '\0';
 
     for (i = len + is_negative - 1; i >= 0; i--)
@@ -77,6 +76,4 @@ char *convert_to_string(int num)
 
     if (is_negative)
         str[0] = '-';
-
-    return (str);
 }
