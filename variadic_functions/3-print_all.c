@@ -68,7 +68,7 @@ printer_t printers[] =
 {'f', print_float},
 {'c', print_char},
 {'s', print_string},
-{NULL, NULL}
+{0, NULL}
 };
 
 va_start(args, format);
