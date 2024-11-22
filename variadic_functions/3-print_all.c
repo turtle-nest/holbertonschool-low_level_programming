@@ -68,7 +68,7 @@ printer_t printers[] =
 {'f', print_float},
 {'c', print_char},
 {'s', print_string},
-{0, NULL}
+{'\0', NULL}
 };
 
 va_start(args, format);
@@ -79,7 +79,7 @@ return;
 while (format[i])
 {
 j = 0;
-while (printers[j].type != NULL)
+while (printers[j].type != '\0')
 {
 if (format[i] == printers[j].type)
 {
