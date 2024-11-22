@@ -8,7 +8,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
     va_list args;
-    unsigned int i;
+    unsigned int i, j; /* Move declaration of j here */
     int num;
     char *str_num;
 
@@ -19,12 +19,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
         num = va_arg(args, int);
         str_num = convert_to_string(num);
 
-        unsigned int j;
+        /* Print the converted number */
         for (j = 0; str_num[j]; j++)
             _putchar(str_num[j]);
-
         free(str_num);
 
+        /* Print the separator */
         if (separator != NULL && i != n - 1)
         {
             for (j = 0; separator[j]; j++)
@@ -44,8 +44,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
  */
 char *convert_to_string(int num)
 {
-    int len = 0, tmp = num;
-    int is_negative = 0;
+    int len = 0, tmp = num, is_negative = 0;
     char *str;
     int i;
 
