@@ -1,4 +1,25 @@
 #include "lists.h"
+#include "lists.h"
+
+/**
+ * str_length - Calculates the length of a string.
+ * @str: The string whose length is to be calculated.
+ * 
+ * Return: The length of the string.
+ */
+size_t str_length(const char *str)
+{
+    size_t length = 0;
+
+    while (str[length] != '\0')
+    {
+        length++;
+    }
+
+    return (length);
+}
+#include "lists.h"
+#include <stdio.h>
 
 /**
  * print_list - Prints all the elements of a list_t list.
@@ -12,7 +33,7 @@ size_t print_list(const list_t *h)
 
     while (h != NULL)
     {
-        printf("[%lu] %s\n", strlen(h->str), h->str);
+        printf("[%lu] %s\n", str_length(h->str), h->str);
         h = h->next;
         count++;
     }
