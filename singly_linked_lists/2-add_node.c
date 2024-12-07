@@ -1,51 +1,31 @@
 #include "lists.h"
+#include <string.h>
+#include <stdlib.h>
 
 /**
- * string_length - Calculates the length of a string.
- * @str: The string whose length to calculate.
+ * add_node - Adds a new node at the beginning of a list_t list.
+ * @head: A pointer to the head of the list.
+ * @str: The string to be duplicated and added to the new node.
  * 
- * Return: The length of the string.
- */
-int string_length(const char *str)
-{
-    int len = 0;
-
-    while (str[len] != '\0')
-        len++;
-
-    return len;
-}
-
-/**
- * add_node - adds a new node at the beginning of a list
- * @head: a double pointer to an element of the list
- * @str: a string
- *
- * Return: the address of the new element,
- * or NULL if it failed.
+ * Return: The address of the new element, or NULL if it failed.
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *newNode;
+    list_t *new_node;
+    
+    new_node = malloc(sizeof(list_t));
+    if (new_node == NULL)
+        return (NULL);
 
-	newNode = malloc(sizeof(list_t));
-	if (newNode == NULL)
-		return (NULL);
+    new_node->str = strdup(str);
+    if (new_node->str == NULL)
+    {
+        free(new_node);
+        return (NULL);
+    }
 
-	newNode->str = strdup(str);
-	if (newNode->str == NULL)
-	{
-		free(newNode);
-		return (NULL);
-	}
+    new_node->next = *head;
+    *head = new_node;
 
-	newNode->next = *head;
-	*head = newNode;
-
- 	_putchar(string_length(newNode->str) + '0');
-    _putchar('\n');
-    _putchar(newNode->str);
-
-
-	return (newNode);
+    return (new_node);
 }
