@@ -11,17 +11,17 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-    unsigned int i = 0;
+	unsigned int i = 0;
 
-    /* Parcourir la liste jusqu'à atteindre l'index ou la fin */
-    while (head)
-    {
-        if (i == index)
-            return (head);
-        head = head->next;
-        i++;
-    }
+	/* Parcourir la liste jusqu'à atteindre l'index ou la fin */
+	while (head)
+	{
+		if (i == index)
+			return (head);
+		head = head->next;
+		i++;
+	}
 
-    /* Retourner NULL si l'index dépasse la taille de la liste */
-    return (NULL);
+	/* Retourner NULL si l'index dépasse la taille de la liste */
+	return (NULL);
 }
