@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - short description, single line
- * @void: Description of parameter
+ * main - Entry point of the program
+ * 
+ * Description: This function prints a specific string to the standard output.
  *
- * Description: Longer description of the function)?
- *
- * Return: value
+ * Return: Always returns 0 (Success)
  */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }

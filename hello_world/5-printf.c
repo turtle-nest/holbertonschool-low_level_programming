@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - Short description, single line
- * @void: Description of parameter x
-(* a blank line
- * Description: Longer description of the function)?
-(* section header: Section description)*
- * Return: Description of the returned value
+ * main - Entry point of the program
+ * 
+ * Description: This function prints a specific string
+ * to the standard output using printf.
+ *
+ * Return: Always returns 0 (Success)
  */
 int main(void)
 {
-printf("with proper grammar, but the outcome is a piece of art,\n");
-return (0);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
