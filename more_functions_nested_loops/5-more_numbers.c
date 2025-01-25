@@ -8,18 +8,20 @@
  *
  * Return: Always 0.
  */
+
 void more_numbers(void)
 {
-	char numbers[] = "01234567891011121314\n";
-	int i;
+	int n, i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 10; i++)
 	{
-	char *ptr = numbers;
-
-	while (*ptr)
+		for (n = 0; n <= 14; n++)
 		{
-		_putchar(*ptr++);
+			if (n > 9)
+				_putchar((n / 10) + '0');
+			_putchar((n % 10) + '0');
 		}
+	_putchar('\n');
 	}
+	return;
 }
