@@ -15,6 +15,6 @@ void print_numbers(void)
 
 	while (*ptr)
 	{
-	_putchar(*ptr++);
+		_putchar(*ptr++);
 	}
 }
